@@ -10,6 +10,7 @@ class TransactionList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final mediaQuery = MediaQuery.of(context);
     return Container(
       child: transactions.isEmpty
           ? LayoutBuilder(builder: (ctx, contraints) {
